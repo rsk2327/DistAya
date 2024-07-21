@@ -1,16 +1,16 @@
-# Dataset Processing Project
+# DistAYA - FineTuning Track
 
-This project is designed to download, process, and save multiple datasets in a unified format. It provides a flexible framework for handling various datasets and storing them as JSONL files.
+## Task: 1 Unification and Collection of Supervised Instruct Fine-Tuning Datasets
 
-## File Structure
+### File Structure
 
 ```
 project_root/
 ├── data/                      # Created when running the script
 │   ├── dataset_name_1/
-│   │   └── data.jsonl
+│   │   └── dataset_name_1.jsonl
 │   └── dataset_name_2/
-│       └── data.jsonl
+│       └── dataset_name_2.jsonl
 ├── utils/
 │   └── io.py                  # I/O utility functions
 ├── downloaders.py             # Functions to download datasets
@@ -20,7 +20,7 @@ project_root/
 └── README.md                  # This file
 ```
 
-## Setup
+### Setup
 
 1. Ensure you have Python 3.7 or later installed.
 2. Install the required dependencies:
@@ -32,7 +32,7 @@ project_root/
    pip install -r requirements.txt
    ```
 
-## Usage
+### Usage
 
 To process all datasets:
 
@@ -44,7 +44,7 @@ To process all datasets:
 3. The script will create a `data` directory (if it doesn't exist) and process each dataset defined in `mapper.py`.
 4. Each dataset will be saved in its own subdirectory within the `data` directory.
 
-## Adding a New Dataset
+### Adding a New Dataset
 
 To add a new dataset to the project:
 
@@ -75,7 +75,7 @@ To add a new dataset to the project:
 
 4. Run `unify_format.py` again to process the new dataset along with the existing ones.
 
-## File Descriptions
+#3# File Descriptions
 
 - `downloaders.py`: Contains functions to download each dataset.
 - `preparers.py`: Contains functions to prepare and format each dataset.
@@ -83,7 +83,7 @@ To add a new dataset to the project:
 - `unify_format.py`: The main script that orchestrates the downloading, processing, and saving of all datasets.
 - `utils/io.py`: Contains utility functions for I/O operations, such as writing JSONL files.
 
-## Output
+### Output
 
 After running `unify_format.py`, you'll find:
 
