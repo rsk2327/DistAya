@@ -6,7 +6,7 @@ The first step is to compute the sensitivity of each layer to pruning. This give
 The approach is to examine the perplexity induced when removing a given layer.
 
 ```bash
-python -m DistAya.src.pruning.perplexity_pruning \
+python -m DistAya.src.pruning.perplexity_sensivity \
             --model CohereForAI/aya-23-8B \
             --batch_size 8 \
             --output_folder sensivities \
