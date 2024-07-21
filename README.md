@@ -12,6 +12,11 @@ python -m DistAya.src.pruning.perplexity_pruning \
             --output_folder sensivities \
             --subset 128
 ```
+
+TODO:
+- [ ] Use a multilingual data (for now I use wikitext which is in English)
+
+
 ### Input/output similarity as a Sensivity Score
 See the [ShortGPT Paper](https://arxiv.org/abs/2403.03853)
 
