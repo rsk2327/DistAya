@@ -38,8 +38,6 @@ def main():
         print(f"Output directory already exists: {output_dir}")
     
     for dataset_name, funcs in MAPPER_DICT.items():
-        if dataset_name !='Six_Millions_Instruction_Dataset_For_Arabic_Llm_Ft':
-            continue
         process_dataset(
             dataset_name,
             funcs['download_function'],
