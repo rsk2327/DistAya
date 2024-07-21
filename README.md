@@ -17,3 +17,6 @@ See the [ShortGPT Paper](https://arxiv.org/abs/2403.03853)
 
 ## Compression
 ...
+
+# Distillation
+...
