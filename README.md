@@ -9,12 +9,11 @@ The approach is to examine the perplexity induced when removing a given layer.
 python -m DistAya.src.pruning.perplexity_sensivity \
             --model CohereForAI/aya-23-8B \
             --batch_size 8 \
-            --output_folder sensivities \
+            --output_folder sensitivities \
             --subset 128
 ```
 
-TODO:
-- [ ] Use a multilingual data (for now I use wikitext which is in English)
+This will produce a CSV representing the sensitivity of each layer to pruning. This sensitivity score is just the perplexity of the model when this layer is dropped.
 
 
 ### Input/output similarity as a Sensivity Score
